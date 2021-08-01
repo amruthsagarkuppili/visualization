@@ -1,0 +1,1035 @@
+<html>
+    <meta name="viewport" content="width=1000, initial-scale=1">
+<head>
+    <script src='https://d3js.org/d3.v4.min.js'></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="contentStyles.css">
+</head>
+
+<body>
+    <div class="topWrapper">
+        <div class="imag">
+            <img src="backgrounddisp.jpg">
+        </div>
+        <!-- <img src="backgrounddisp.jpg"> -->
+        <div id="mainWrapper">
+
+
+            <div class="jumbotron text-center main_text zero">
+                <p>ISACA's 2017 Digital Transformation Barometer-research of more than 4,100 business technology
+                    professionals worldwide-found that the emerging technologies that are the most transformational also
+                    pose the most organizational challenges in terms of perceived risk and resistance to change. To
+                    enable a successful digital transformation journey, enterprises require strong governance and risk
+                    management programs, which drive confidence and enable the speed of business.</p>
+            </div>
+
+
+            <div class="container-fluid first">
+                <div class="row">
+                    <div class="col-sm-7" id="my_dataviz">
+                        <div id="one_1">
+                            <p>Top Motivators for Implementing an</p>
+                            <p id="high_header">Emerging Technology</p>
+                        </div>
+
+                    </div>
+                    <div id="one_1">
+                        <p>Technologies Facing The Most Organizational</p>
+                        <p id="high_header">Challenges or Resistance</p>
+                    </div>
+                    <div class="col-sm-5" id="image_viz">
+
+                        <div id="img_top_div" class="img_div_top">
+
+                        </div>
+                        <div id="combined_div">
+                            <div id="img_al_div1" class="img_div_out">
+
+                            </div>
+                            <div id="img_al_div2" class="img_div_out">
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container-fluid" id="second">
+                <div class="row" id="second_row">
+
+                    <div class="col-sm-6" id="progress_11">
+
+                    </div>
+
+
+                    <div class="col-sm-6" id="bars">
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container-fluid" id="third">
+                <div class="row" id="third_row">
+                    <div class="col-sm-12" id="vertical_bars">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-5" id="three_nuts">
+
+                    </div>
+                    <div class="col-sm-7" id="four_nuts">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="jumbotron text-center">
+                <p>Companies with digitally literate leaders are more aggressive and receptive to evaluating and
+                    adopting emerging technologies in their quests to achieve digital transformation.</p>
+                <b>
+                    <p>For more information: www.isaca.org/digital-transformation-barometer</p>
+                </b>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script>
+        d3.json("document.json", function (visualizeData) {
+            //console.log(visualizeData.two.two_2.content);
+
+            var width = 600
+            height = 300
+            margin = 40
+
+            // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
+            var radius = Math.min(width, height) / 2 - margin
+
+            // append the svg object to the div called 'my_dataviz'
+            var svg = d3.select("#my_dataviz")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .append("g")
+                .attr("transform", "translate(140," + height / 2 + ")");
+
+            // Create data
+            var data = visualizeData.two.two_1.content.proportions
+            var labels = visualizeData.two.two_1.content.labels
+            // set the color scale
+            var color = d3.scaleOrdinal()
+                .range(["#d84315", "#ef6c00", "#ffab00", "#ffc400", "#ffcc80", "#ffe0b2"]);
+            // Compute the position of each group on the pie:
+            var pie = d3.pie()
+                .sort(null) // Do not sort group by size
+                .value(function (d) { return d.value; })
+            var data_ready = pie(d3.entries(data))
+
+            // The arc generator
+            var arc = d3.arc()
+                .innerRadius(radius * 0.5)         // This is the size of the donut hole
+                .outerRadius(radius * 0.8)
+
+            // Another arc that won't be drawn. Just for labels positioning
+            var outerArc = d3.arc()
+                .innerRadius(radius * 0.9)
+                .outerRadius(radius * 0.9)
+
+            // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+            svg
+                .selectAll('allSlices')
+                .data(data_ready)
+                .enter()
+                .append('path')
+                .attr('d', arc)
+                .attr('fill', function (d) { return (color(d.data.key)) })
+                .attr("stroke", "white")
+                .style("stroke-width", "2px")
+                .style("opacity", 0.8)
+
+            // Add the polylines between chart and labels:
+            svg
+                .selectAll('allPolylines')
+                .data(data_ready)
+                .enter()
+                .append('polyline')
+                .attr("stroke", "black")
+                .style("fill", "none")
+                .attr("stroke-width", 1)
+                .attr('points', function (d) {
+                    var posA = arc.centroid(d) // line insertion in the slice
+                    var posB = outerArc.centroid(d) // line break: we use the other arc generator that has been built only for that
+                    var posC = outerArc.centroid(d); // Label position = almost the same as posB
+                    var midangle = d.startAngle + (d.endAngle - d.startAngle) / 2 // we need the angle to see if the X position will be at the extreme right or extreme left
+                    posC[0] = radius * 0.95 * (midangle < Math.PI ? 1 : -1); // multiply by 1 or -1 to put it on the right or on the left
+                    return [posA, posB, posC]
+                })
+
+            // Add the polylines between chart and labels:
+            svg
+                .selectAll('allLabels')
+                .data(data_ready)
+                .enter()
+                .append('text')
+                .text(function (d) { console.log(d.data.key); return d.data.key })
+                .attr('transform', function (d) {
+                    var pos = outerArc.centroid(d);
+                    var midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
+                    pos[0] = radius * 0.99 * (midangle < Math.PI ? 1 : -1);
+                    return 'translate(' + pos + ')';
+                })
+                .style('text-anchor', function (d) {
+                    var midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
+                    return (midangle < Math.PI ? 'start' : 'end')
+                })
+
+            // legend dimensions
+            var legendRectSize = 25; // defines the size of the colored squares in legend
+            var legendSpacing = 6; // defines spacing between squares
+
+            // define legend
+            var legend = svg.selectAll('.legend') // selecting elements with class 'legend'
+                .data(labels) // refers to an array of labels from our dataset
+                .enter() // creates placeholder
+                .append('g') // replace placeholders with g elements
+                .attr('class', 'legend') // each g is given a legend class
+                .attr('transform', function (d, i) {
+                    var height = legendRectSize + legendSpacing; // height of element is the height of the colored square plus the spacing      
+                    var offset = height * labels.length / 2; // vertical offset of the entire legend = height of a single element & half the total number of elements  
+                    var horz = -2 * legendRectSize; // the legend is shifted to the left to make room for the text
+                    var vert = i * height - offset; // the top of the element is hifted up or down from the center using the offset defiend earlier and the index of the current element 'i'               
+                    return 'translate( 150 ,' + vert + ')'; //return translation       
+                });
+
+            legend.append('rect') // append rectangle squares to legend                                   
+                .attr('width', legendRectSize) // width of rect size is defined above                        
+                .attr('height', legendRectSize) // height of rect size is defined above                      
+                .style('fill', color) // each fill is passed a color
+                .style('stroke', color) // each stroke is passed a color
+
+
+            // adding text to legend
+            legend.append('text')
+                .attr('x', legendRectSize + legendSpacing)
+                .attr('y', legendRectSize - legendSpacing)
+                .text(function (d) { return d; }); // return label
+
+
+            d3.selectAll('#img_top_div')
+                .html('')
+                .selectAll('div')
+                .data(visualizeData.two.two_2.content_0)
+                .enter()
+                .append(function (d) {
+                    // Create the image element.
+                    const div = document.createElement('div');
+
+                    return div;
+                })
+                .attr('class', 'img_div')
+                .append(function (d) {
+                    // Create the image element.
+                    const icon = document.createElement('img');
+                    // Change its source to the icon.
+                    icon.src = d.icon;
+                    // Return the image element.
+                    return icon;
+                })
+                // Go back up a node, so that we can append the span.
+                .select(function () {
+                    return this.parentNode;
+                })
+                .select(function () {
+                    return this.parentNode;
+                })
+                .append('div')
+                .attr('class', 'img_div_text')
+                .append('span')
+                // Change the text of the span element to the current 
+                // data's text property.
+                .text(function (d) {
+                    return d.text;
+                });
+
+
+            d3.selectAll('#img_al_div1')
+                .html('')
+                .selectAll('div')
+                .data(visualizeData.two.two_2.content_1)
+                .enter()
+                .append(function (d) {
+                    // Create the image element.
+                    const div = document.createElement('div');
+
+                    return div;
+                })
+                .attr('class', 'img_div')
+                .append(function (d) {
+                    // Create the image element.
+                    const icon = document.createElement('img');
+                    // Change its source to the icon.
+                    icon.src = d.icon;
+                    // Return the image element.
+                    return icon;
+                })
+                // Go back up a node, so that we can append the span.
+                .select(function () {
+                    return this.parentNode;
+                })
+                .append('div')
+                .attr('class', 'img_div_text')
+                .append('span')
+                // Change the text of the span element to the current 
+                // data's text property.
+                .text(function (d) {
+                    return d.text;
+                });
+
+
+            d3.selectAll('#img_al_div2')
+                .html('')
+                .selectAll('div')
+                .data(visualizeData.two.two_2.content_2)
+                .enter()
+                .append('div')
+                .attr('class', 'img_div')
+                .append(function (d) {
+                    // Create the image element.
+                    const icon = document.createElement('img');
+                    // Change its source to the icon.
+                    icon.src = d.icon;
+                    // Return the image element.
+                    return icon;
+                })
+                // Go back up a node, so that we can append the span.
+                .select(function () {
+                    return this.parentNode;
+                })
+                .append('div')
+                .attr('class', 'img_div_text')
+                .append('span')
+                // Change the text of the span element to the current 
+                // data's text property.
+                .text(function (d) {
+                    return d.text;
+                });
+
+
+
+
+
+
+            //Progress bars
+            d3.selectAll("#progress_11")
+                .append("svg")
+                .data(visualizeData.three.three_1.content)
+                .attr("class", "horiz_bars")
+                .append("text")
+                .attr("x", 0)
+                .attr("y", 30)
+                .attr("id", "high_header")
+                .text("Evaluating Opportunities")
+                .select(function () {
+                    return this.parentNode;
+                })
+                .append("text")
+                .attr("x", 0)
+                .attr("y", 60)
+                .attr("font-size", 22)
+                .text("Arising From Emerging Technologies")
+                .select(function () {
+                    return this.parentNode;
+                })
+                .append("g")
+                .append("text")
+                .attr("x", 15)
+                .attr("y", 180)
+                .attr("class", "two_text")
+                .text("22%")
+                .select(function () {
+                    return this.parentNode;
+                })
+                .append("rect")
+                .attr("x", 0)
+                .attr("y", 200)
+                .attr("width", 22)
+                .attr("height", 30)
+                .attr("fill", "#ffab00")
+                .select(function () {
+                    return this.parentNode;
+                })
+                .append("rect")
+                .attr("x", 22)
+                .attr("y", 200)
+                .attr("width", 78)
+                .attr("height", 30)
+                .attr("fill", "#ffe0b2")
+                .select(function () {
+                    return this.parentNode;
+                })
+                .append("text")
+                .attr("x", 215)
+                .attr("y", 180)
+                .attr("class", "two_text")
+                .text("31%")
+                .select(function () {
+                    return this.parentNode;
+                })
+                .append("rect")
+                .attr("x", 200)
+                .attr("y", 200)
+                .attr("width", 31)
+                .attr("height", 30)
+                .attr("fill", "#ffab00")
+                .select(function () {
+                    return this.parentNode;
+                })
+                .append("rect")
+                .attr("x", 231)
+                .attr("y", 200)
+                .attr("width", 69)
+                .attr("height", 30)
+                .attr("fill", "#ffe0b2")
+                .select(function () {
+                    return this.parentNode;
+                })
+
+
+
+
+
+
+
+
+
+
+
+            //Horizontal bars
+            d3.selectAll("#bars")
+                .append("svg")
+                .attr("class", "horiz_bars")
+                .append("text")
+                .attr("x", 0)
+                .attr("y", 30)
+                .attr("id", "high_header")
+                .text("Who is Responsible")
+                .select(function () {
+                    return this.parentNode;
+                })
+                .append("text")
+                .attr("x", 0)
+                .attr("y", 60)
+                .attr("font-size", 22)
+                .text("for Evaluating Emerging Technologies?")
+                .select(function () {
+                    return this.parentNode;
+                })
+                .selectAll("svg")
+                .data(visualizeData.three.three_2.content)
+                .enter()
+                .append("g")
+                .append("rect")
+                .attr("class", "bar_horiz")
+                .attr("x", 0)
+                .attr("y", function (d, i) { return i * 50 + 90 })
+                .attr("width", function (d) { return d.width })
+                .attr("height", 40)
+                .attr("fill", "#ffab00")
+                .select(function () {
+                    return this.parentNode;
+                })
+                .append("text")
+                .attr("class", "bar_button_text")
+                .attr("x", 20)
+                .attr("y", function (d, i) { return (i * 50) + 120 })
+                .text(function (d) { return d.percent })
+                .select(function () {
+                    return this.parentNode;
+                })
+                .append("text")
+                .attr("class", "hor_bar_side_text")
+                .attr("x", function (d) { return d.width + 20 })
+                .attr("y", function (d, i) { return (i * 50) + 120 })
+                .text(function (d) { return d.text })
+                .attr("font-size", 18)
+
+
+
+
+
+            //Vertical bars
+            var verti_color = ["#DC8246", "#EA8F58", "#F0A450", "#F4BC5B", "#F7D08E", "#FEEBCB", "#FEF7DC"];
+            y = [200, 380, 400, 440, 510, 558, 568];
+            h = [380, 200, 180, 140, 70, 20, 10]
+            verticalBars = d3.selectAll("#vertical_bars")
+                .append("svg")
+                .attr("class", "horiz_bars")
+                .append("text")
+                .attr("x", 0)
+                .attr("y", 60)
+                .attr("font-size", 22)
+                .text("Technologies With Potential to")
+                .select(function () {
+                    return this.parentNode;
+                })
+                .append("text")
+                .attr("x", 0)
+                .attr("y", 100)
+                .attr("id", "high_header")
+                .text("Deliver Transformational Value")
+                .select(function () {
+                    return this.parentNode;
+                })
+                .selectAll("svg")
+                .data(visualizeData.four.content)
+                .enter()
+                .append("g")
+                .append("rect")
+                .attr("class", "bar_horiz")
+                .attr("x", function (d, i) { return i * 150 })
+                .attr("y", function (d, i) { return y[i] })
+                .attr("width", 80)
+                .attr("height", function (d, i) { return h[i] })
+                .attr("fill", function (d, i) { return verti_color[i] })
+                .select(function () {
+                    return this.parentNode;
+                })
+                .append("text")
+                .attr("class", "bar_button_text_vert")
+                .attr("x", function (d, i) { return (i * 150) + 25 })
+                .attr("y", function (d, i) { return y[i] - 20 })
+                .text(function (d) { return d.percent })
+                .select(function () {
+                    return this.parentNode.parentNode;
+                })
+
+
+            // define legend
+            var vertLegend = verticalBars.select('.vertLegend') // selecting elements with class 'legend'
+                .data(visualizeData.four.content) // refers to an array of labels from our dataset
+                .enter() // creates placeholder
+                .append('g') // replace placeholders with g elements
+                .attr('class', 'vertLegend') // each g is given a legend class
+                .attr('transform', function (d, i) {
+                    var height = legendRectSize + legendSpacing; // height of element is the height of the colored square plus the spacing      
+                    var offset = height * labels.length / 2; // vertical offset of the entire legend = height of a single element & half the total number of elements  
+                    var horz = -2 * legendRectSize; // the legend is shifted to the left to make room for the text
+                    var vert = i * 40 + 120; // the top of the element is hifted up or down from the center using the offset defiend earlier and the index of the current element 'i'               
+                    return 'translate( 600 ,' + vert + ')'; //return translation       
+                });
+
+            vertLegend.append('rect') // append rectangle squares to legend                                   
+                .attr('width', legendRectSize) // width of rect size is defined above                        
+                .attr('height', legendRectSize) // height of rect size is defined above                      
+                .attr("fill", function (d, i) { return verti_color[i] })
+                .select(function () {
+                    return this.parentNode;
+                })
+
+
+            // adding text to legend
+            vertLegend.append('text')
+                .attr('x', legendRectSize + legendSpacing)
+                .attr('y', legendRectSize - legendSpacing)
+                .text(function (d) { return d.text; }); // return label
+
+
+
+
+
+            //3 donuts
+
+            //donut 1
+            var width = 220
+            height = 300
+            margin = 30
+            vert_data = [53, 47]
+            // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
+            var radius = Math.min(width, height) / 2 - margin
+
+            d3.select("#three_nuts")
+                .append("svg")
+                .attr("width", "100%")
+                .append("text")
+                .attr("x", 30)
+                .attr("y", 60)
+                .attr("font-size", 22)
+                .text("Are Your Organization's Leaders")
+                .select(function () {
+                    return this.parentNode;
+                })
+                .append("text")
+                .attr("x", 30)
+                .attr("y", 100)
+                .attr("id", "high_header")
+                .text("Digitally Literate?")
+            // append the svg object to the div called 'my_dataviz'
+            var svg = d3.select("#three_nuts")
+                .append("svg")
+                .attr("width", 160)
+                .attr("height", height)
+                .append("g")
+                .attr("transform", "translate(90," + height / 4 + ")");
+
+            // Create data
+
+            var color = d3.scaleOrdinal()
+                .range(["#ffab00", "#ffe0b2"]);
+            // Compute the position of each group on the pie:
+            var pie = d3.pie()
+                .sort(null) // Do not sort group by size
+                .value(function (d) { return d.value; })
+            var data_ready = pie(d3.entries(vert_data))
+
+            // The arc generator
+            var arc = d3.arc()
+                .innerRadius(radius * 0.5)         // This is the size of the donut hole
+                .outerRadius(radius * 0.8)
+
+            // Another arc that won't be drawn. Just for labels positioning
+            var outerArc = d3.arc()
+                .innerRadius(radius * 0.9)
+                .outerRadius(radius * 0.9)
+
+            // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+            svg
+                .selectAll('allSlices')
+                .data(data_ready)
+                .enter()
+                .append('path')
+                .attr('d', arc)
+                .attr('fill', function (d) { return (color(d.data.key)) })
+                .attr("stroke", "white")
+                .style("stroke-width", "2px")
+                .style("opacity", 0.7)
+
+
+            svg
+                .append('text')
+                .text('53%')
+                .attr('text-anchor', 'middle')
+                .attr('x', 5)
+                .attr('y', 10)
+                .data(data_ready)
+                .attr('fill', '#ffab00')
+                .attr('font-size', 24)
+
+            svg
+                .append('text')
+                .text('Yes')
+                .attr('text-anchor', 'middle')
+                .attr('y', 100)
+                .data(data_ready)
+                .attr('fill', '#ffab00')
+                .attr('font-size', 22)
+
+
+
+            //Donut 2
+
+            vert_data = [25, 75]
+            // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
+            var radius = Math.min(width, height) / 2 - margin
+
+            // append the svg object to the div called 'my_dataviz'
+            var svg = d3.select("#three_nuts")
+                .append("svg")
+                .attr("width", 160)
+                .attr("height", height)
+                .append("g")
+                .attr("transform", "translate(90," + height / 4 + ")");
+
+
+            // set the color scale
+            var color = d3.scaleOrdinal()
+                .range(["#ffab00", "#ffe0b2"]);
+            // Compute the position of each group on the pie:
+            var pie = d3.pie()
+                .sort(null) // Do not sort group by size
+                .value(function (d) { return d.value; })
+            var data_ready = pie(d3.entries(vert_data))
+
+
+
+            // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+            svg
+                .selectAll('allSlices')
+                .data(data_ready)
+                .enter()
+                .append('path')
+                .attr('d', arc)
+                .attr('fill', function (d) { return (color(d.data.key)) })
+                .attr("stroke", "white")
+                .style("stroke-width", "2px")
+                .style("opacity", 0.7)
+
+
+            svg
+                .append('text')
+                .text('25%')
+                .attr('text-anchor', 'middle')
+                .attr('x', 5)
+                .attr('y', 10)
+                .data(data_ready)
+                .attr('fill', '#ffab00')
+                .attr('font-size', 24)
+
+            svg
+                .append('text')
+                .text('No')
+                .attr('text-anchor', 'middle')
+                .attr('y', 100)
+                .data(data_ready)
+                .attr('fill', '#ffab00')
+                .attr('font-size', 22)
+
+
+
+            //Donut 3
+            var width = 220
+            height = 300
+            margin = 30
+            vert_data = [22, 78]
+            // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
+            var radius = Math.min(width, height) / 2 - margin
+
+            // append the svg object to the div called 'my_dataviz'
+            var svg = d3.select("#three_nuts")
+                .append("svg")
+                .attr("width", 160)
+                .attr("height", height)
+                .append("g")
+                .attr("transform", "translate(90," + height / 4 + ")");
+
+            // set the color scale
+            var color = d3.scaleOrdinal()
+                .range(["#ffab00", "#ffe0b2"]);
+            // Compute the position of each group on the pie:
+            var pie = d3.pie()
+                .sort(null) // Do not sort group by size
+                .value(function (d) { return d.value; })
+            var data_ready = pie(d3.entries(vert_data))
+
+
+
+            // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+            svg
+                .selectAll('allSlices')
+                .data(data_ready)
+                .enter()
+                .append('path')
+                .attr('d', arc)
+                .attr('fill', function (d) { return (color(d.data.key)) })
+                .attr("stroke", "white")
+                .style("stroke-width", "2px")
+                .style("opacity", 0.7)
+
+
+            svg
+                .append('text')
+                .text('22%')
+                .attr('text-anchor', 'middle')
+                .attr('x', 5)
+                .attr('y', 10)
+                .data(data_ready)
+                .attr('fill', '#ffab00')
+                .attr('font-size', 24)
+
+            svg
+                .append('text')
+                .text('Unsure')
+                .attr('text-anchor', 'middle')
+                .attr('y', 100)
+                .data(data_ready)
+                .attr('fill', '#ffab00')
+                .attr('font-size', 22)
+
+
+
+
+            //4 donuts
+
+            //donut 1
+            var width = 220
+            height = 300
+            margin = 30
+            vert_data = [0, 100]
+            // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
+            var radius = Math.min(width, height) / 2 - margin
+
+            d3.select("#four_nuts")
+                .append("svg")
+                .attr("width", "100%")
+                .append("text")
+                .attr("x", 80)
+                .attr("y", 60)
+                .attr("font-size", 22)
+                .text("Are Your Organization's Leaders")
+                .select(function () {
+                    return this.parentNode;
+                })
+                .append("text")
+                .attr("x", 80)
+                .attr("y", 100)
+                .attr("id", "high_header")
+                .text("Receptive to Emerging Tech?")
+            // append the svg object to the div called 'my_dataviz'
+            var svg = d3.select("#four_nuts")
+                .append("svg")
+                .attr("width", 220)
+                .attr("height", height)
+                .append("g")
+                .attr("transform", "translate(140," + height / 4 + ")");
+
+            // set the color scale
+            var color = d3.scaleOrdinal()
+                .range(["#d84315"]);
+            // Compute the position of each group on the pie:
+            var pie = d3.pie()
+                .sort(null) // Do not sort group by size
+                .value(function (d) { return d.value; })
+            var data_ready = pie(d3.entries(vert_data))
+
+            // The arc generator
+            var arc = d3.arc()
+                .innerRadius(radius * 0.8)         // This is the size of the donut hole
+                .outerRadius(radius * 0.65)
+
+            // Another arc that won't be drawn. Just for labels positioning
+            var outerArc = d3.arc()
+                .innerRadius(radius * 0.9)
+                .outerRadius(radius * 0.9)
+
+            // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+            svg
+                .selectAll('allSlices')
+                .data(data_ready)
+                .enter()
+                .append('path')
+                .attr('d', arc)
+                .attr('fill', function (d) { return (color(d.data.key)) })
+                .attr("stroke", "white")
+                .style("stroke-width", "2px")
+                .style("opacity", 0.7)
+
+
+            svg
+                .append('text')
+                .text('23%')
+                .attr('text-anchor', 'middle')
+                .attr('x', 5)
+                .attr('y', 10)
+                .data(data_ready)
+                .attr('font-size', 30)
+
+            svg
+                .append('text')
+                .text('Very')
+                .attr('text-anchor', 'middle')
+                .attr('y', 100)
+                .data(data_ready)
+                .attr('font-size', 22)
+
+
+
+            //Donut 2
+            var width = 220
+            height = 300
+            margin = 30
+            // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
+            var radius = Math.min(width, height) / 2 - margin
+
+            // append the svg object to the div called 'my_dataviz'
+            var svg = d3.select("#four_nuts")
+                .append("svg")
+                .attr("width", 160)
+                .attr("height", height)
+                .append("g")
+                .attr("transform", "translate(90," + height / 4 + ")");
+
+
+            // set the color scale
+            var color = d3.scaleOrdinal()
+                .range(["#ffab00"]);
+            // Compute the position of each group on the pie:
+            var pie = d3.pie()
+                .sort(null) // Do not sort group by size
+                .value(function (d) { return d.value; })
+            var data_ready = pie(d3.entries(vert_data))
+
+
+            // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+            svg
+                .selectAll('allSlices')
+                .data(data_ready)
+                .enter()
+                .append('path')
+                .attr('d', arc)
+                .attr('fill', function (d) { return (color(d.data.key)) })
+                .attr("stroke", "white")
+                .style("stroke-width", "2px")
+                .style("opacity", 0.7)
+
+
+            svg
+                .append('text')
+                .text('50%')
+                .attr('text-anchor', 'middle')
+                .attr('x', 5)
+                .attr('y', 10)
+                .data(data_ready)
+                .attr('font-size', 30)
+
+            svg
+                .append('text')
+                .text('Moderately')
+                .attr('text-anchor', 'middle')
+                .attr('y', 100)
+                .data(data_ready)
+                .attr('font-size', 22)
+
+
+
+            //Donut 3
+            var width = 220
+            height = 300
+            margin = 30
+            // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
+            var radius = Math.min(width, height) / 2 - margin
+
+            // append the svg object to the div called 'my_dataviz'
+            var svg = d3.select("#four_nuts")
+                .append("svg")
+                .attr("width", 160)
+                .attr("height", height)
+                .append("g")
+                .attr("transform", "translate(90," + height / 4 + ")");
+
+
+            // set the color scale
+            var color = d3.scaleOrdinal()
+                .range(["#ffc400"]);
+            // Compute the position of each group on the pie:
+            var pie = d3.pie()
+                .sort(null) // Do not sort group by size
+                .value(function (d) { return d.value; })
+            var data_ready = pie(d3.entries(vert_data))
+
+
+            // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+            svg
+                .selectAll('allSlices')
+                .data(data_ready)
+                .enter()
+                .append('path')
+                .attr('d', arc)
+                .attr('fill', function (d) { return (color(d.data.key)) })
+                .attr("stroke", "white")
+                .style("stroke-width", "2px")
+                .style("opacity", 0.7)
+
+
+            svg
+                .append('text')
+                .text('17%')
+                .attr('text-anchor', 'middle')
+                .attr('x', 5)
+                .attr('y', 10)
+                .data(data_ready)
+                .attr('font-size', 30)
+
+            svg
+                .append('text')
+                .text('Not Very ')
+                .attr('text-anchor', 'middle')
+                .attr('y', 100)
+                .data(data_ready)
+                .attr('font-size', 22)
+
+
+
+
+            //Donut 4
+            var width = 220
+            height = 300
+            margin = 30
+            // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
+            var radius = Math.min(width, height) / 2 - margin
+
+            // append the svg object to the div called 'my_dataviz'
+            var svg = d3.select("#four_nuts")
+                .append("svg")
+                .attr("width", 160)
+                .attr("height", height)
+                .append("g")
+                .attr("transform", "translate(90," + height / 4 + ")");
+
+            // set the color scale
+            var color = d3.scaleOrdinal()
+                .range(["#ffab00", "#ffe0b2"]);
+            // Compute the position of each group on the pie:
+            var pie = d3.pie()
+                .sort(null) // Do not sort group by size
+                .value(function (d) { return d.value; })
+            var data_ready = pie(d3.entries(vert_data))
+
+
+            // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+            svg
+                .selectAll('allSlices')
+                .data(data_ready)
+                .enter()
+                .append('path')
+                .attr('d', arc)
+                .attr('fill', function (d) { return (color(d.data.key)) })
+                .attr("stroke", "white")
+                .style("stroke-width", "2px")
+                .style("opacity", 0.7)
+
+
+            svg
+                .append('text')
+                .text('7%')
+                .attr('text-anchor', 'middle')
+                .attr('x', 5)
+                .attr('y', 10)
+                .data(data_ready)
+                .attr('font-size', 30)
+
+            svg
+                .append('text')
+                .text('Not at All')
+                .attr('text-anchor', 'middle')
+                .attr('y', 100)
+                .data(data_ready)
+                .attr('font-size', 22)
+
+        });
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

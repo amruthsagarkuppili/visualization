@@ -1,0 +1,2585 @@
+{
+    "name": "Portfolio",
+    "children": [
+        {
+            "name": "Store 1",
+            "children": [
+                {
+                    "name": "Store area conditions Info",
+                    "children": [
+                        {
+                            "name": "2010",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 67.49°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 2.69$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 7.86 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 111.31",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2011",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 67.65°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.42$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 7.81 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 215.65",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2012",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 67.33°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.49$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 6.99 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 145",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2013",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 66.98°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.55$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 6.84 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 224.62",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Store sales Info",
+                    "children": [
+                        {
+                            "name": "2010",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5419940.02$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2011",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5632452.98$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2012",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5246985.02$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2013",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 4835673.33$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Store Info",
+                    "children": [
+                        {
+                            "name": "Type",
+                            "children": [
+                                {
+                                    "name": "The Type of the store is A",
+                                    "value": "cgi-1.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Size",
+                            "children": [
+                                {
+                                    "name": "The size of the store is 151315m³",
+                                    "value": "cgi-1.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Store 2",
+            "children": [
+                {
+                    "name": "Store area conditions Info",
+                    "children": [
+                        {
+                            "name": "2010",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 67.26°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 2.82$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 7.93 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 210.96",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2011",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 66.28°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.89$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 6.42 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 173.3",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2012",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 68.27°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.19$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 7.45 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 291.64",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2013",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 64.21°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 4.01$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 7.11 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 120.25",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Store sales Info",
+                    "children": [
+                        {
+                            "name": "2010",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 2318840.12$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2011",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5632367.18$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2012",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5248743.02$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2013",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 4821383.33$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Store Info",
+                    "children": [
+                        {
+                            "name": "Type",
+                            "children": [
+                                {
+                                    "name": "The Type of the store is A",
+                                    "value": "cgi-1.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Size",
+                            "children": [
+                                {
+                                    "name": "The size of the store is 202307m³",
+                                    "value": "cgi-1.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Store 3",
+            "children": [
+                {
+                    "name": "Store area conditions Info",
+                    "children": [
+                        {
+                            "name": "2010",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 66.27°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 2.74$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 6.11 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 164.62",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2011",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 64.32°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.23$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 8.01 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 275.02",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2012",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 66.22°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.01$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 7.13 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 225.52",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2013",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 66.12°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 2.98$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 8.2 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 150.17",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Store sales Info",
+                    "children": [
+                        {
+                            "name": "2010",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5367840.72$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2011",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5643252.18$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2012",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5259873.77$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2013",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5825689.33$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Store Info",
+                    "children": [
+                        {
+                            "name": "Type",
+                            "children": [
+                                {
+                                    "name": "The Type of the store is B",
+                                    "value": "cgi-1.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Size",
+                            "children": [
+                                {
+                                    "name": "The size of the store is 37392m³",
+                                    "value": "cgi-1.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Store 4",
+            "children": [
+                {
+                    "name": "Store area conditions Info",
+                    "children": [
+                        {
+                            "name": "2010",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 64.22°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.91$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 7.05 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 126.38",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2011",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 66.65°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.47$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 7.88 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 126.03",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2012",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 67.37°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.66$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 7.09 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 130.93",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2013",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 67.98°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.58$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 5.43 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 80.36",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Store sales Info",
+                    "children": [
+                        {
+                            "name": "2010",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5488650.97$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2011",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5945322.54$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2012",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 53546785.88$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2013",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5908673.33$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Store Info",
+                    "children": [
+                        {
+                            "name": "Type",
+                            "children": [
+                                {
+                                    "name": "The Type of the store is A",
+                                    "value": "cgi-1.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Size",
+                            "children": [
+                                {
+                                    "name": "The size of the store is 205863m³",
+                                    "value": "cgi-1.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Store 5",
+            "children": [
+                {
+                    "name": "Store area conditions Info",
+                    "children": [
+                        {
+                            "name": "2010",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 63.79°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.05$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 7.92 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 184.86",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2011",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 64.65°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.47$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 7.59 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 195.21",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2012",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 66.47°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 4.01$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 7.91 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 222.59",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2013",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 67.98°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.71$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 6.88 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 225.22",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Store sales Info",
+                    "children": [
+                        {
+                            "name": "2010",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5455550.02$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2011",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5698762.17$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2012",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5223786.88$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2013",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 4812343.87$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Store Info",
+                    "children": [
+                        {
+                            "name": "Type",
+                            "children": [
+                                {
+                                    "name": "The Type of the store is B",
+                                    "value": "cgi-1.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Size",
+                            "children": [
+                                {
+                                    "name": "The size of the store is 34875m³",
+                                    "value": "cgi-1.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Store 6",
+            "children": [
+                {
+                    "name": "Store area conditions Info",
+                    "children": [
+                        {
+                            "name": "2010",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 65.11°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 2.73$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 6.43 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 126.82",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2011",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 65.65°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 2.67$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 7.89 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 145.2",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2012",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 66.42°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.76$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 6.84 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 120.61",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2013",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 66.58°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.25$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 6.54 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 276.25",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Store sales Info",
+                    "children": [
+                        {
+                            "name": "2010",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5367840.02$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2011",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5623452.78$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2012",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5289755.19$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2013",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5678673.33$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Store Info",
+                    "children": [
+                        {
+                            "name": "Type",
+                            "children": [
+                                {
+                                    "name": "The Type of the store is A",
+                                    "value": "cgi-1.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Size",
+                            "children": [
+                                {
+                                    "name": "The size of the store is 202505m³",
+                                    "value": "cgi-1.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Store 7",
+            "children": [
+                {
+                    "name": "Store area conditions Info",
+                    "children": [
+                        {
+                            "name": "2010",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 66.69°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.39$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 7.63 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 121.11",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2011",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 66.65°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.81$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 6.97 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 232.6",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2012",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 68.01°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.69$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 6.54 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 198.03",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2013",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 67.98°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.52$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 6.89 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 201.03",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Store sales Info",
+                    "children": [
+                        {
+                            "name": "2010",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5419890.54$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2011",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5678952.27$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2012",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5256789.76$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2013",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 4894563.61$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Store Info",
+                    "children": [
+                        {
+                            "name": "Type",
+                            "children": [
+                                {
+                                    "name": "The Type of the store is B",
+                                    "value": "cgi-1.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Size",
+                            "children": [
+                                {
+                                    "name": "The size of the store is 70713m³",
+                                    "value": "cgi-1.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Store 8",
+            "children": [
+                {
+                    "name": "Store area conditions Info",
+                    "children": [
+                        {
+                            "name": "2010",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 66.49°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 2.71$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 5.98 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 114.67",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2011",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 66.65°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.52$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 7.58 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 78.07",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2012",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 67.37°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 4.49$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 7.01 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 225.57",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2013",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 65.98°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.99$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 5.84 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 176.46",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Store sales Info",
+                    "children": [
+                        {
+                            "name": "2010",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5217650.02$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2011",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5689652.36$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2012",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 52987645.87$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2013",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 48679893.11$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Store Info",
+                    "children": [
+                        {
+                            "name": "Type",
+                            "children": [
+                                {
+                                    "name": "The Type of the store is A",
+                                    "value": "cgi-1.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Size",
+                            "children": [
+                                {
+                                    "name": "The size of the store is 155078m³",
+                                    "value": "cgi-1.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Store 9",
+            "children": [
+                {
+                    "name": "Store area conditions Info",
+                    "children": [
+                        {
+                            "name": "2010",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 66.11°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.69$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 7.22 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 214.85",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2011",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 65.68°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.48$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 7.41 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 128.26",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2012",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 67.43°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 2.49$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 7.07 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 65.76",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2013",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 66.54°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.66$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 8.89 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 180.66",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Store sales Info",
+                    "children": [
+                        {
+                            "name": "2010",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5567840.12$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2011",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5645672.68$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2012",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5248765.54$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2013",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 58476573.65$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Store Info",
+                    "children": [
+                        {
+                            "name": "Type",
+                            "children": [
+                                {
+                                    "name": "The Type of the store is B",
+                                    "value": "cgi-1.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Size",
+                            "children": [
+                                {
+                                    "name": "The size of the store is 125833m³",
+                                    "value": "cgi-1.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Store 10",
+            "children": [
+                {
+                    "name": "Store area conditions Info",
+                    "children": [
+                        {
+                            "name": "2010",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 65.11°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 2.79$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 6.86 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 126.38",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2011",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 66.65°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.47$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 7.51 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 276.03",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2012",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 63.37°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 3.48$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 6.97 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 130.93",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2013",
+                            "children": [
+                                {
+                                    "name": "Average temperature",
+                                    "children": [
+                                        {
+                                            "name": "The average temperature is 64.18°F",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average fuel price",
+                                    "children": [
+                                        {
+                                            "name": " Average fuel price is 4.55$/lt",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average Unemployement",
+                                    "children": [
+                                        {
+                                            "name": "The rate is 6.89 per 100 people",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Average CPI",
+                                    "children": [
+                                        {
+                                            "name": "The average CPI is 60.51",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Store sales Info",
+                    "children": [
+                        {
+                            "name": "2010",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5434567.78$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2011",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 56789352.98$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2012",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 5237885.02$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "2013",
+                            "children": [
+                                {
+                                    "name": "Sales",
+                                    "children": [
+                                        {
+                                            "name": "The total sales is 4835673.33$",
+                                            "value": "cgi-1.jpg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Store Info",
+                    "children": [
+                        {
+                            "name": "Type",
+                            "children": [
+                                {
+                                    "name": "The Type of the store is B",
+                                    "value": "cgi-1.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Size",
+                            "children": [
+                                {
+                                    "name": "The size of the store is 126512m³",
+                                    "value": "cgi-1.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

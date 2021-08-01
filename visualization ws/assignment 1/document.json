@@ -1,0 +1,166 @@
+{
+  "mappingData": {
+    "29%": "Anticipated Cost Savings",
+    "24%": "New Revenue Stream",
+    "18%": "Ability to Reach New Customers",
+    "15%": "Increased Agility",
+    "9%": "Reputational Value",
+    "3%": "A Customer's Successful Implementation"
+  },
+  "one": {
+    "heading": "ISACA's 2017 Digital Transformation Barometer-research of more than 4,100 business technology professionals worldwide-found that the emerging technologies that are the most transformational also pose the most organizational challenges in terms of perceived risk and resistance to change. To enable a successful digital transformation journey, enterprises require strong governance and risk management programs, which drive confidence and enable the speed of business."
+  },
+  "two": {
+    "two_1": {
+      "heading": "Top Motivators for Implementing an Emerging Technology",
+      "content": {
+        "labels": [
+          "Anticipated Cost Savings",
+          "New Revenue Stream",
+          "Ability to Reach New Customers",
+          "Increased Agility",
+          "Reputational Value",
+          "A Customer's Successful Implementation"
+        ],
+        "proportions": {
+          "3%": 3,
+          "29%": 29,
+          "24%": 24,
+          "18%": 18,
+          "15%": 15,
+          "9%": 9
+        }
+      }
+    },
+    "two_2": {
+      "heading": "Technologies Facing The Most Organizational Challenges or Resistance",
+      "content_0": [
+        {
+          "text": "AI/Machine Learning/Cognitive Tech",
+          "icon": "image1.jpg"
+        }
+      ],
+      "content_1": [
+        {
+          "text": "Public Cloud",
+          "icon": "image2.jpg"
+        },
+        {
+          "text": "Block chain",
+          "icon": "image3.jpg"
+        },
+        {
+          "text": "Internet of Things",
+          "icon": "image4.jpg"
+        },
+        {
+          "text": "Big Data Analytics",
+          "icon": "image5.jpg"
+        }
+      ]
+    }
+  },
+  "three": {
+    "three_1": {
+      "heading": "Evaluating Opportunities Arising From Emerging Technologies",
+      "content": [
+        {
+          "text0": "organizations",
+          "text1": "rarely evaluate",
+          "percent": "22%"
+        },
+        {
+          "text0": "organizations",
+          "text1": "frequently evaluate",
+          "percent": "31%"
+        }
+      ]
+    },
+    "three_2": {
+      "heading": "Who is Responsible for Evaluating Emerging Technologies?",
+      "content": [
+        {
+          "text": "Innovation Group",
+          "percent": "7%",
+          "width": 100
+        },
+        {
+          "text": "Business Unit",
+          "percent": "7%",
+          "width": 100
+        },
+        {
+          "text": "Executive Management",
+          "percent": "12%",
+          "width": 150
+        },
+        {
+          "text": "Multiple Groups' Decision",
+          "percent": "33%",
+          "width": 280
+        },
+        {
+          "text": "IT Group",
+          "percent": "39%",
+          "width": 300
+        }
+      ]
+    }
+  },
+  "four": {
+    "heading": "Technologies With Potential to Deliver Transformational Value",
+    "content": [
+      {
+        "text": "Big Data Analytics",
+        "percent": "38%"
+      },
+      {
+        "text": "AI/Machine Learning/Cognitive",
+        "percent": "20%"
+      },
+      {
+        "text": "Public Cloud",
+        "percent": "18%"
+      },
+      {
+        "text": "IOT",
+        "percent": "14%"
+      },
+      {
+        "text": "Blockchain",
+        "percent": "7%"
+      },
+      {
+        "text": "AR/VR",
+        "percent": "2%"
+      },
+      {
+        "text": "3D Printing",
+        "percent": "1%"
+      }
+    ]
+  },
+  "five": {
+    "five_1": {
+      "heading": "Are Your Organization's Leaders Digitally Literate?",
+      "content": {
+        "Yes": "53%",
+        "No": "25%",
+        "Unsure": "22%"
+      }
+    },
+    "five_2": {
+      "heading": "Are Your Organization's Leaders Receptive to Emerging Tech?",
+      "content": {
+        "Very": "23%",
+        "Moderately": "50%",
+        "Not Very": "17%",
+        "Not at All": "7%"
+      }
+    }
+  },
+  "six": {
+    "heading": "Companies with digitally literate leaders are more aggressive and receptive to evaluating and adopting emerging technologies in their quests to achieve digital transformation.",
+    "link": "For more information: www.isaca.org/digital-transformation-barometer"
+  }
+}
